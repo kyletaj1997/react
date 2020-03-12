@@ -9,6 +9,7 @@ import Counter from './components/Counter'
 import FunctionClick from './components/FunctionClick'
 import Bind from './components/Bind'
 import Parent from './components/Parent'
+import Conditional from './components/Conditional'
 class App extends Component {
   render(){
      return(
@@ -20,6 +21,7 @@ class App extends Component {
        <Third name ="aa"> <p> this child of b </p></Third>
        <Bind> </Bind>
        <Parent> </Parent>
+       <Conditional>  </Conditional>
        {/*
        <Third name ="bb">
          <p> this child of bb </p>
