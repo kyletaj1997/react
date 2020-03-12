@@ -5,13 +5,14 @@ import Greet from './components/Greet'
 import Welcome from './components/Welcome'
 import Third from './components/Third'
 import State from './components/State'
-
+import Counter from './components/Counter'
 class App extends Component {
   render(){
      return(
 
        <div className="App">
        <State></State>
+       <Counter></Counter>
        {/*<<Third name ="aa"></Third>
        <Third name ="bb">
          <p> this child of bb </p>
