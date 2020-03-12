@@ -4,12 +4,15 @@ import './App.css';
 import Greet from './components/Greet'
 import Welcome from './components/Welcome'
 import Third from './components/Third'
+import State from './components/State'
 
 class App extends Component {
   render(){
      return(
+
        <div className="App">
-       <Third name ="aa"></Third>
+       <State></State>
+       {/*<<Third name ="aa"></Third>
        <Third name ="bb">
          <p> this child of bb </p>
        </Third>
@@ -20,8 +23,9 @@ class App extends Component {
        </Welcome>
        <Welcome name = "c">
          <a>kyle</a>
-       </Welcome>
-       </div>
+       </Welcome>*/}
+
+     </div>
        
      );
   }
