@@ -6,6 +6,7 @@ import Welcome from './components/Welcome'
 import Third from './components/Third'
 import State from './components/State'
 import Counter from './components/Counter'
+import FunctionClick from './components/FunctionClick'
 class App extends Component {
   render(){
      return(
@@ -13,6 +14,7 @@ class App extends Component {
        <div className="App">
        <State></State>
        <Counter></Counter>
+       <FunctionClick></FunctionClick>
        <Third name ="aa"> <p> this child of b </p></Third>
        {/*
        <Third name ="bb">
