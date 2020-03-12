@@ -13,7 +13,8 @@ class App extends Component {
        <div className="App">
        <State></State>
        <Counter></Counter>
-       {/*<<Third name ="aa"></Third>
+       <Third name ="aa"> <p> this child of b </p></Third>
+       {/*
        <Third name ="bb">
          <p> this child of bb </p>
        </Third>

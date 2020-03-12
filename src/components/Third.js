@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
-
-
-
-const Third = (pros) => {
+const Third = ({name , children}) => {
    
     return (
         <div>
-    <h1> {pros.name}</h1>
-    {pros.children}
+    <h1> {name}</h1>
+    {children}
     </div>
     )
 
