@@ -9,7 +9,18 @@ class App extends Component {
   render(){
      return(
        <div className="App">
-       <Third></Third>
+       <Third name ="aa"></Third>
+       <Third name ="bb">
+         <p> this child of bb </p>
+       </Third>
+       <Third name ="cc"></Third>
+       <Welcome name = "a"></Welcome>
+       <Welcome name = "b">
+       <p> this child of b </p>
+       </Welcome>
+       <Welcome name = "c">
+         <a>kyle</a>
+       </Welcome>
        </div>
        
      );

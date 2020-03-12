@@ -2,10 +2,15 @@ import React, { Component } from 'react'
 
 
 
-const Third = () => {
+const Third = (pros) => {
+   
+    return (
+        <div>
+    <h1> {pros.name}</h1>
+    {pros.children}
+    </div>
+    )
 
-    return React.createElement("div",{id:"id",className:"class"},
-    React.createElement("h1",null,"Hellow World"));
 }
 
 export default Third
