@@ -1,25 +1,15 @@
 import React, { Component } from 'react'
 
 class Counter extends Component {
-      constructor() {
-      super()
-    
-        this.state = {
-            counter: 0
-        }
-      }
-    
-      MessageChange(){
-          this.setState({
-              counter: this.state.counter + 1
-          })
-      }
+  
 
     render(){
+
+      const  {count,incrementCount} = this.props
     return (
             <div>
-            <h1>{this.state.counter}</h1>
-            <button onClick={this.MessageChange.bind(this) }> Change</button>
+            <h2>{count}</h2>
+            <button onClick={incrementCount}> Change</button>
               </div>
         
         );

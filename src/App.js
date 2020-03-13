@@ -21,16 +21,21 @@ import Portal from './components/PortalsDemo'
 import Hero from './components/Hero'
 import Error from './components/Error'
 import Hover from './components/Hover'
+import User from './components/User'
 class App extends Component {
   render(){
      return(
 
+
+
       <div className="App">
 
-         <Counter ></Counter>
+          <User render ={ (count,incrementCount)=> <Counter count={count} incrementCount={incrementCount} ></Counter> }></User>
+
+         {/*<Counter ></Counter>
          <Hover></Hover>
           
-        {/* <Error><Hero heroName="Batman"></Hero>
+         <Error><Hero heroName="Batman"></Hero>
         </Error>
         <Counter ></Counter>
          <Hover></Hover>
