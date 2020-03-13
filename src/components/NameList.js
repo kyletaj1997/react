@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
+import PersonList from './PersonList'
 
 function NameList(){
 
-  const names = ['awdawd','kyle']
+  const person= [{name:'kyle',age:"2"},{name:'wew',age:"3"}]
 
     return (
        
            <div>
-              {names.map(name => <h1>{name}</h1>)}
+              {person.map(person => <PersonList key={person.name}  person={person} />)}
            </div>
         
         
