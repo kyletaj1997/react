@@ -74,7 +74,7 @@ function Child() {
   );
 }
 
-ReactDOM.render(<Parent />, appRoot);
+//ReactDOM.render(<Parent />, appRoot);
 
 
 ReactDOM.render(<App />, document.getElementById('root'));

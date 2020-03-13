@@ -18,14 +18,26 @@ import PureComponents from './components/PureComponents'
 import Memo from './components/Memo'
 import Refs from './components/RefsDemo'
 import Portal from './components/PortalsDemo'
+import Hero from './components/Hero'
+import Error from './components/Error'
 class App extends Component {
   render(){
      return(
 
        <div className="App">
+         <Error>
+        <Hero heroName="Batman"></Hero>
+        </Error>
 
-          <Portal></Portal>
-          {/*<Refs></Refs>
+        <Error>
+        <Hero heroName="Superman"></Hero>
+        </Error>
+        
+        <Error>
+        <Hero heroName="Joker"></Hero>
+        </Error>
+          {/* <Portal> </Portal>
+         <Refs></Refs>
 
        <Memo></Memo>
           <PureComponents></PureComponents>
