@@ -20,6 +20,19 @@ class LifeB extends Component {
      componentDidMount(){
         console.log("A")
      }
+
+     shouldComponentUpdate(){
+        console.log("should")
+        return true
+    }
+
+    getSnapshotBeforeUpdate(prevProps,prevState){
+        console.log("snap")   
+    }
+    componentDidUpdate(){
+        console.log("DidUpdate")   
+    }
+
     render() {
         return (
             <div>
