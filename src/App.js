@@ -14,13 +14,17 @@ import NameList from './components/NameList'
 import Form from './components/Form'
 import LifeA from './components/LifeA'
 import Fragment from './components/Fragment'
+import PureComponents from './components/PureComponents'
 class App extends Component {
   render(){
      return(
 
        <div className="App">
-           <Fragment></Fragment>
-          {/* <LifeA></LifeA>
+         <PureComponents></PureComponents>
+
+           {/*<Fragment></Fragment>
+
+       <LifeA></LifeA>
 
         <Form></Form>
         <NameList></NameList>
