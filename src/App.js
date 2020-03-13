@@ -10,19 +10,23 @@ import FunctionClick from './components/FunctionClick'
 import Bind from './components/Bind'
 import Parent from './components/Parent'
 import Conditional from './components/Conditional'
+import NameList from './components/NameList'
+
 class App extends Component {
   render(){
      return(
 
        <div className="App">
-       <State></State>
-       <Counter></Counter>
+
+         
+        <NameList></NameList>
+        {/*<Counter></Counter>
        <FunctionClick></FunctionClick>
        <Third name ="aa"> <p> this child of b </p></Third>
        <Bind> </Bind>
        <Parent> </Parent>
        <Conditional>  </Conditional>
-       {/*
+     
        <Third name ="bb">
          <p> this child of bb </p>
        </Third>

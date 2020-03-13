@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-function FunctionClick(){
+function NameList(){
 
   const names = ['awdawd','kyle']
 
@@ -15,4 +15,4 @@ function FunctionClick(){
 
 }
 
-export default FunctionClick
+export default NameList

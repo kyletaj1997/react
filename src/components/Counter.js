@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 class Counter extends Component {
       constructor() {
       super()
+    
         this.state = {
             counter: 0
         }
@@ -18,7 +19,7 @@ class Counter extends Component {
     return (
             <div>
             <h1>{this.state.counter}</h1>
-            <button onClick={ () => this.MessageChange() }> Change</button>
+            <button onClick={this.MessageChange.bind(this) }> Change</button>
               </div>
         
         );
