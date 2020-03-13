@@ -13,15 +13,16 @@ import Conditional from './components/Conditional'
 import NameList from './components/NameList'
 import Form from './components/Form'
 import LifeA from './components/LifeA'
+import Fragment from './components/Fragment'
 class App extends Component {
   render(){
      return(
 
        <div className="App">
+           <Fragment></Fragment>
+          {/* <LifeA></LifeA>
 
-          <LifeA></LifeA>
-
-         {/*<Form></Form>
+        <Form></Form>
         <NameList></NameList>
         <Counter></Counter>
        <FunctionClick></FunctionClick>
