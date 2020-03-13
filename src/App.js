@@ -11,16 +11,16 @@ import Bind from './components/Bind'
 import Parent from './components/Parent'
 import Conditional from './components/Conditional'
 import NameList from './components/NameList'
-
+import Form from './components/Form'
 class App extends Component {
   render(){
      return(
 
        <div className="App">
 
-         
-        <NameList></NameList>
-        {/*<Counter></Counter>
+         <Form></Form>
+        {/*<NameList></NameList>
+        <Counter></Counter>
        <FunctionClick></FunctionClick>
        <Third name ="aa"> <p> this child of b </p></Third>
        <Bind> </Bind>
