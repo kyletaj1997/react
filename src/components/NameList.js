@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
 import PersonList from './PersonList'
+import './MyCss.css'
+
+const heading = {
+     color:"red"
+}
 
 function NameList(){
 
@@ -8,7 +13,7 @@ function NameList(){
     return (
        
            <div>
-              {person.map((person , index ) => <h1 key={index}> {index} {person} </h1> )}
+              {person.map((person , index ) => <h1 className="font" style={heading } key={index}> {index} {person} </h1> )}
            </div>
         
         
