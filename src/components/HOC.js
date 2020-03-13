@@ -9,7 +9,7 @@ const UpdatedComponent = OriginalComponent =>{
             super()
           
               this.state = {
-                  counter: 0
+                  counter: 1
               }
             }
           
@@ -31,4 +31,5 @@ const UpdatedComponent = OriginalComponent =>{
     
     return NewComponent
 }
+
 export default HOC;
