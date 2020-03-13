@@ -19,6 +19,7 @@ class RefsDemo extends Component {
         return (
             <div>
                 <input type="text" ref={this.inputRef}/>
+                <input type="text" ref={this.inputRef}/>
                 <button onClick={this.Handler.bind(this)}>Click</button>
             </div>
         );

@@ -17,15 +17,17 @@ import Fragment from './components/Fragment'
 import PureComponents from './components/PureComponents'
 import Memo from './components/Memo'
 import Refs from './components/RefsDemo'
+import Portal from './components/PortalsDemo'
 class App extends Component {
   render(){
      return(
 
        <div className="App">
 
-        <Refs></Refs>
+          <Portal></Portal>
+          {/*<Refs></Refs>
 
-         {/*<Memo></Memo>
+       <Memo></Memo>
           <PureComponents></PureComponents>
           <Fragment></Fragment>
         <LifeA></LifeA>
