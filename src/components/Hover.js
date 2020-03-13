@@ -1,18 +1,28 @@
 import React, { Component } from 'react'
-import HOC from './HOC'
 
 class Hover extends Component {
-   
+      constructor() {
+      super()
+    
+        this.state = {
+            counter: 0
+        }
+      }
+    
+      MessageChange(){
+          this.setState({
+              counter: this.state.counter + 1
+          })
+      }
 
     render(){
-        const {counter , incrementcount} = this.props
     return (
             <div>
-            <h1>{counter}</h1>
-            <h1 onMouseOver={ incrementcount}> Change</h1>
+            <h1>{this.state.counter}</h1>
+            <h1 onMouseOver={this.MessageChange.bind(this) }> Change</h1>
               </div>
         
         );
     }
 }
-export default HOC(Hover)
+export default Hover

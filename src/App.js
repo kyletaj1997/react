@@ -25,13 +25,15 @@ class App extends Component {
   render(){
      return(
 
-       {/*<div className="App">
+      <div className="App">
+
          <Counter ></Counter>
          <Hover></Hover>
-           <Error>
-        <Hero heroName="Batman"></Hero>
+          
+        {/* <Error><Hero heroName="Batman"></Hero>
         </Error>
-
+        <Counter ></Counter>
+         <Hover></Hover>
         <Error>
         <Hero heroName="Superman"></Hero>
         </Error>
