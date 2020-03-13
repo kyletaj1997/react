@@ -16,18 +16,19 @@ import LifeA from './components/LifeA'
 import Fragment from './components/Fragment'
 import PureComponents from './components/PureComponents'
 import Memo from './components/Memo'
+import Refs from './components/RefsDemo'
 class App extends Component {
   render(){
      return(
 
        <div className="App">
-         <Memo></Memo>
-          {/*<PureComponents></PureComponents>
 
+        <Refs></Refs>
+
+         {/*<Memo></Memo>
+          <PureComponents></PureComponents>
           <Fragment></Fragment>
-
-       <LifeA></LifeA>
-
+        <LifeA></LifeA>
         <Form></Form>
         <NameList></NameList>
         <Counter></Counter>
