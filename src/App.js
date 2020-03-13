@@ -20,23 +20,27 @@ import Refs from './components/RefsDemo'
 import Portal from './components/PortalsDemo'
 import Hero from './components/Hero'
 import Error from './components/Error'
+import Hover from './components/Hover'
 class App extends Component {
   render(){
      return(
 
        <div className="App">
-         <Error>
+
+         <Hover></Hover>
+           {/*<Error>
         <Hero heroName="Batman"></Hero>
         </Error>
 
         <Error>
         <Hero heroName="Superman"></Hero>
         </Error>
-        
+
         <Error>
         <Hero heroName="Joker"></Hero>
         </Error>
-          {/* <Portal> </Portal>
+
+         <Portal> </Portal>
          <Refs></Refs>
 
        <Memo></Memo>

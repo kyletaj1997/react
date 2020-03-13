@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Counter extends Component {
+class Hover extends Component {
       constructor() {
       super()
     
@@ -19,10 +19,10 @@ class Counter extends Component {
     return (
             <div>
             <h1>{this.state.counter}</h1>
-            <button onMouseOver={this.MessageChange.bind(this) }> Change</button>
+            <h1 onMouseOver={this.MessageChange.bind(this) }> Change</h1>
               </div>
         
         );
     }
 }
-export default Counter 
+export default Hover
