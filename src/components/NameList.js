@@ -3,12 +3,12 @@ import PersonList from './PersonList'
 
 function NameList(){
 
-  const person= [{name:'kyle',age:"2"},{name:'wew',age:"3"}]
+  const person= ['kyle','tajores']
 
     return (
        
            <div>
-              {person.map(person => <PersonList key={person.name}  person={person} />)}
+              {person.map((person , index ) => <h1 key={index}> {index} {person} </h1> )}
            </div>
         
         
