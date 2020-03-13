@@ -25,10 +25,10 @@ class App extends Component {
   render(){
      return(
 
-       <div className="App">
-
+       {/*<div className="App">
+         <Counter ></Counter>
          <Hover></Hover>
-           {/*<Error>
+           <Error>
         <Hero heroName="Batman"></Hero>
         </Error>
 

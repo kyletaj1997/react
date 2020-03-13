@@ -1,28 +1,17 @@
 import React, { Component } from 'react'
+import HOC from './HOC'
 
 class Counter extends Component {
-      constructor() {
-      super()
-    
-        this.state = {
-            counter: 0
-        }
-      }
-    
-      MessageChange(){
-          this.setState({
-              counter: this.state.counter + 1
-          })
-      }
-
+     
     render(){
+      const {counter , incrementcount} = this.props
     return (
             <div>
-            <h1>{this.state.counter}</h1>
-            <button onMouseOver={this.MessageChange.bind(this) }> Change</button>
+            <h1>{counter}</h1>
+            <button onMouseOver={incrementcount}> Change</button>
               </div>
         
         );
     }
 }
-export default Counter 
+export default HOC(Counter)
