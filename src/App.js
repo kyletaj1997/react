@@ -12,14 +12,17 @@ import Parent from './components/Parent'
 import Conditional from './components/Conditional'
 import NameList from './components/NameList'
 import Form from './components/Form'
+import LifeA from './components/LifeA'
 class App extends Component {
   render(){
      return(
 
        <div className="App">
 
-         <Form></Form>
-        {/*<NameList></NameList>
+          <LifeA></LifeA>
+
+         {/*<Form></Form>
+        <NameList></NameList>
         <Counter></Counter>
        <FunctionClick></FunctionClick>
        <Third name ="aa"> <p> this child of b </p></Third>

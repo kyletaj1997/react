@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 
 
+
 class Form extends PureComponent {
     constructor(props){
         super(props)
@@ -8,12 +9,15 @@ class Form extends PureComponent {
                username:'',
                select:'' 
             }
+
+            this.testVarible= "";
      }
 
      handler = (event) =>{
          this.setState({
             username:event.target.value
          })
+
      }
 
      handler1 = (event) =>{
@@ -21,7 +25,7 @@ class Form extends PureComponent {
            topic:event.target.value
         })
     }
-  
+    
 
         render() {
             return (
@@ -31,7 +35,12 @@ class Form extends PureComponent {
                         <option value="react"> awd</option>
                         <option value="wow"> aaa</option>
                     </select>
-                    <button onClick={this.handler1.bind(this)}>click</button>
+                      
+                    <table>
+                       
+                       
+                             <h1>{this.state.username}</h1>
+                        </table>
                 </div>
             );
         }
