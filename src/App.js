@@ -37,7 +37,7 @@ class App extends Component {
 
       <div className="App">
 
-        <HookFour></HookFour>
+        <Hookcounter></Hookcounter>
            {/*<UserProvider vlue="kyle">
           <A></A>
          </UserProvider>
