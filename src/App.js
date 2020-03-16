@@ -30,6 +30,7 @@ import HookTwo from './Hooks/HookTwo'
 import HookThree from './Hooks/HookThree'
 import HookFour from './Hooks/HookFour'
 import HookMouse from './Hooks/HookMouse'
+import MouseContainer from './Hooks/MouseContainer'
 class App extends Component {
   render(){
      return(
@@ -38,7 +39,7 @@ class App extends Component {
 
       <div className="App">
 
-        <HookMouse></HookMouse>
+        <MouseContainer></MouseContainer>
            {/*<UserProvider vlue="kyle">
           <A></A>
          </UserProvider>
