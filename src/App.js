@@ -23,6 +23,9 @@ import Error from './components/Error'
 import Hover from './components/Hover'
 import User from './components/User'
 import A from './components/A'
+
+import Post from './Httpreact/PostForm'
+
 import { UserProvider } from './components/UserContext'
 class App extends Component {
   render(){
@@ -31,12 +34,14 @@ class App extends Component {
 
 
       <div className="App">
-          <UserProvider vlue="kyle">
+
+        <Post></Post>
+           {/*<UserProvider vlue="kyle">
           <A></A>
          </UserProvider>
 
 
-          {/* <User render ={ (count,incrementCount)=> <Counter count={count} incrementCount={incrementCount} ></Counter> }></User>
+          <User render ={ (count,incrementCount)=> <Counter count={count} incrementCount={incrementCount} ></Counter> }></User>
 
         <Counter ></Counter>
          <Hover></Hover>
