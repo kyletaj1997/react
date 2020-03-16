@@ -4,9 +4,7 @@ import B from './B'
 class A extends Component {
     render() {
         return (
-            <div>
-                
-            </div>
+            <B></B>
         );
     }
 }
