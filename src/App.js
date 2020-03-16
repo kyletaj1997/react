@@ -1,5 +1,5 @@
 import React,{ Component } from 'react';
-import logo from './logo.svg';
+import logo, { ReactComponent } from './logo.svg';
 import './App.css';
 import Greet from './components/Greet'
 import Welcome from './components/Welcome'
@@ -24,7 +24,7 @@ import Hover from './components/Hover'
 import User from './components/User'
 import A from './components/A'
 import Post from './Httpreact/PostForm'
-import { UserProvider } from './components/UserContext'
+//import UserContext, { UserProvider } from './components/UserContext'
 import Hookcounter from './Hooks/Hookcounter'
 import HookTwo from './Hooks/HookTwo'
 import HookThree from './Hooks/HookThree'
@@ -32,15 +32,19 @@ import HookFour from './Hooks/HookFour'
 import HookMouse from './Hooks/HookMouse'
 import MouseContainer from './Hooks/MouseContainer'
 import DataFetching from './Hooks/DataFetching'
+import C from './Hooks/C'
+
+export const UserContext = React.createContext()
 class App extends Component {
   render(){
      return(
 
 
-
+      
       <div className="App">
-
-        <DataFetching></DataFetching>
+        <UserContext.Provider value={'Kyle'}>
+        <C></C>
+        </UserContext.Provider>
            {/*<UserProvider vlue="kyle">
           <A></A>
          </UserProvider>
