@@ -28,6 +28,7 @@ import { UserProvider } from './components/UserContext'
 import Hookcounter from './Hooks/Hookcounter'
 import HookTwo from './Hooks/HookTwo'
 import HookThree from './Hooks/HookThree'
+import HookFour from './Hooks/HookFour'
 class App extends Component {
   render(){
      return(
@@ -36,7 +37,7 @@ class App extends Component {
 
       <div className="App">
 
-        <HookThree></HookThree>
+        <HookFour></HookFour>
            {/*<UserProvider vlue="kyle">
           <A></A>
          </UserProvider>
