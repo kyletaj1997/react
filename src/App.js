@@ -27,6 +27,7 @@ import Post from './Httpreact/PostForm'
 import { UserProvider } from './components/UserContext'
 import Hookcounter from './Hooks/Hookcounter'
 import HookTwo from './Hooks/HookTwo'
+import HookThree from './Hooks/HookThree'
 class App extends Component {
   render(){
      return(
@@ -35,7 +36,7 @@ class App extends Component {
 
       <div className="App">
 
-        <HookTwo></HookTwo>
+        <HookThree></HookThree>
            {/*<UserProvider vlue="kyle">
           <A></A>
          </UserProvider>
