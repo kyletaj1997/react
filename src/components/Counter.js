@@ -7,10 +7,12 @@ class Counter extends Component {
 
       const  {count,incrementCount} = this.props
     return (
+
             <div>
             <h2>{count}</h2>
             <button onClick={incrementCount}> Change</button>
               </div>
+            
         
         );
     }

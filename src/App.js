@@ -22,6 +22,8 @@ import Hero from './components/Hero'
 import Error from './components/Error'
 import Hover from './components/Hover'
 import User from './components/User'
+import A from './components/A'
+import { UserProvider } from './components/UserContext'
 class App extends Component {
   render(){
      return(
@@ -29,10 +31,14 @@ class App extends Component {
 
 
       <div className="App">
+          <UserProvider vlue="kyle">
+          <A></A>
+         </UserProvider>
 
-          <User render ={ (count,incrementCount)=> <Counter count={count} incrementCount={incrementCount} ></Counter> }></User>
 
-         {/*<Counter ></Counter>
+          {/* <User render ={ (count,incrementCount)=> <Counter count={count} incrementCount={incrementCount} ></Counter> }></User>
+
+        <Counter ></Counter>
          <Hover></Hover>
           
          <Error><Hero heroName="Batman"></Hero>

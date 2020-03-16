@@ -12,7 +12,7 @@ const UpdatedComponent = OriginalComponent =>{
                   counter: 1
               }
             }
-          
+            
             MessageChange(){
                 this.setState({
                     counter: this.state.counter + 1
