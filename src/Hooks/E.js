@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import F from './F'
+import {UserContext} from '../App'
 
-function E(props) {
+function E() {
+    const a = useContext(UserContext)
+
     return (
         <div>
-            <F></F>
+            {a}
         </div>
     );
 }
