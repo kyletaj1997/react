@@ -33,7 +33,7 @@ import HookMouse from './Hooks/HookMouse'
 import MouseContainer from './Hooks/MouseContainer'
 import DataFetching from './Hooks/DataFetching'
 import C from './Hooks/C'
-
+import Counter1 from './Hooks/Counter'
 export const UserContext = React.createContext()
 class App extends Component {
   render(){
@@ -42,10 +42,12 @@ class App extends Component {
 
       
       <div className="App">
-        <UserContext.Provider value={'Kyle'}>
+
+        <Counter1></Counter1>
+       {/*<UserContext.Provider value={'Kyle'}>
         <C></C>
         </UserContext.Provider>
-           {/*<UserProvider vlue="kyle">
+           <UserProvider vlue="kyle">
           <A></A>
          </UserProvider>
 
