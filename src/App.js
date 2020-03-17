@@ -36,6 +36,7 @@ import C from './Hooks/C'
 import Counter1 from './Hooks/Counter'
 import Focus from './Hooks/Focus'
 import DocumentTitle from './Hooks/DocumentTitle'
+import Users from './Hooks/User'
 export const UserContext = React.createContext()
 class App extends Component {
   render(){
@@ -45,7 +46,7 @@ class App extends Component {
       
       <div className="App">
 
-        <DocumentTitle></DocumentTitle>
+        <Users></Users>
        {/*<UserContext.Provider value={'Kyle'}>
         <C></C>
         </UserContext.Provider>
