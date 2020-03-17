@@ -35,6 +35,7 @@ import DataFetching from './Hooks/DataFetching'
 import C from './Hooks/C'
 import Counter1 from './Hooks/Counter'
 import Focus from './Hooks/Focus'
+import DocumentTitle from './Hooks/DocumentTitle'
 export const UserContext = React.createContext()
 class App extends Component {
   render(){
@@ -44,7 +45,7 @@ class App extends Component {
       
       <div className="App">
 
-        <Focus ></Focus>
+        <DocumentTitle></DocumentTitle>
        {/*<UserContext.Provider value={'Kyle'}>
         <C></C>
         </UserContext.Provider>
